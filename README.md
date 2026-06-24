@@ -23,7 +23,7 @@ serve -s build
 ```
 
 ## Features
-- AI Chat with Azure OpenAI (GPT-4o-mini)
+- AI Chat with Azure OpenAI 
 - Voice interaction (Web Speech API)
 - 3 role dashboards: User, Advocate, Admin
 - Legal Topics browser (8 Indian law categories)
@@ -31,4 +31,4 @@ serve -s build
 - Consultation history
 - Dark purple UI matching Lexora screenshots
 
-## Azure OpenAI config is in src/services/azureOpenAI.ts
+
