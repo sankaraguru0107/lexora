@@ -1,7 +1,7 @@
-const AZURE_ENDPOINT = 'https://genai-trigent-openai.openai.azure.com/';
-const AZURE_API_KEY = '51ba5d46601c477b844d3883af93463c';
-const DEPLOYMENT_NAME = 'gpt-4o-mini';
-const API_VERSION = '2024-02-15-preview';
+const AZURE_ENDPOINT = '';
+const AZURE_API_KEY = '';
+const DEPLOYMENT_NAME = '';
+const API_VERSION = '';
 
 export interface Message {
   id: string;
