@@ -1,0 +1,37 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@400;500;600;700&family=Exo+2:wght@300;400;500;600;700&display=swap');
+
+:root {
+  --bg-primary: #0a0a1a;
+  --bg-secondary: #0f0f2a;
+  --bg-card: #12123a;
+  --bg-elevated: #1a1a4a;
+  --accent-orange: #ff4500;
+  --accent-orange-light: #ff6a35;
+  --accent-purple: #7c3aed;
+  --accent-purple-light: #a855f7;
+  --accent-cyan: #06b6d4;
+  --text-primary: #ffffff;
+  --text-secondary: #a0a0c0;
+  --text-muted: #6060a0;
+  --border-color: #2a2a5a;
+  --glow-purple: rgba(124, 58, 237, 0.3);
+  --glow-orange: rgba(255, 69, 0, 0.3);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html, body { width: 100%; height: 100%; background: var(--bg-primary); color: var(--text-primary); font-family: 'Exo 2', sans-serif; overflow-x: hidden; }
+#root { min-height: 100vh; }
+::-webkit-scrollbar { width: 6px; }
+::-webkit-scrollbar-track { background: var(--bg-secondary); }
+::-webkit-scrollbar-thumb { background: var(--accent-purple); border-radius: 3px; }
+button { cursor: pointer; font-family: 'Exo 2', sans-serif; }
+input, textarea, select { font-family: 'Exo 2', sans-serif; }
+
+@keyframes pulse-glow { 0%,100%{box-shadow:0 0 20px rgba(124,58,237,0.3);}50%{box-shadow:0 0 40px rgba(124,58,237,0.5),0 0 60px rgba(255,69,0,0.2);} }
+@keyframes fadeIn { from{opacity:0;transform:translateY(20px);}to{opacity:1;transform:translateY(0);} }
+@keyframes slideIn { from{opacity:0;transform:translateX(-20px);}to{opacity:1;transform:translateX(0);} }
+@keyframes spin { from{transform:rotate(0deg);}to{transform:rotate(360deg);} }
+@keyframes ripple { 0%{transform:scale(0.8);opacity:1;}100%{transform:scale(2.5);opacity:0;} }
+@keyframes waveform { 0%,100%{height:8px;}50%{height:32px;} }
+@keyframes float { 0%,100%{transform:translateY(0);}50%{transform:translateY(-10px);} }
+.fade-in { animation: fadeIn 0.4s ease forwards; }
